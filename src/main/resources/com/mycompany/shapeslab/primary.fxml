@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.shapeslab.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="rectRight" mnemonicParsing="false" onAction="#moveRectToRight" text="Rectangle Right 100" />
+            <Button fx:id="allRight" mnemonicParsing="false" onAction="#moveAllToRight" text="All Right 200" />
+            <Button fx:id="RectRot" mnemonicParsing="false" onAction="#rotateRect" text="Rect Rotate 60" />
+            <Button fx:id="scaleCirc" mnemonicParsing="false" onAction="#makeCircleBig" text="Scale Circle 2x" />
+            <Button fx:id="optRot" mnemonicParsing="false" onAction="#optionalRotate" text="Optional Rotate" />
+            <Button fx:id="optScale" mnemonicParsing="false" onAction="#optionalScale" text="Optional Scale" />
+         </children>
+      </HBox>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Circle fx:id="Circ" fill="DODGERBLUE" layoutX="96.0" layoutY="185.0" radius="76.0" stroke="BLACK" strokeType="INSIDE" />
+            <Rectangle fx:id="Rect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="152.0" layoutX="224.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
